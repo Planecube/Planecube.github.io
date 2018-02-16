@@ -11,7 +11,7 @@
  * Use "image1.png", "image2.png", and "image3.png" as the array values.
  */
 var q1 = ['image1.png', 'image2.png','image3.png'];
-console.log('Question1 ' + q1);
+console.log('Question 1 ' + q1);
 // Your code here
 
 /**
@@ -22,7 +22,7 @@ console.log('Question1 ' + q1);
 
 // Your code here
 var q2 = q1[0];
-console.log('Question2 '] + q2);
+console.log('Question 2 '] + q2);
 /**
  * Question 3
  * Get the length of the first array (number of elements in the array)
@@ -31,7 +31,7 @@ console.log('Question2 '] + q2);
 
 // Your code here
 var q3 =q1.length;
-console.log ('Question3 ' + q3);
+console.log ('Question 3 ' + q3);
 /**
  * Question 4
  * Using the array from Question 1, store the last element of the array
