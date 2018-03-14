@@ -25,7 +25,7 @@ function renderCitiBikeMarkers(stations) {
     var marker = new google.maps.Marker({
          position: {lat:station.lat/1000000, lng:station.lng/1000000},
          map: map,
-         title: station.name + ' ' + station.bikes + ' bikes available'
+         title: station.name + ' ' + station.bikes + ' bikes available' + ' ' + station.free + ' ' + ' free spaces'
     });
   });
 }  
