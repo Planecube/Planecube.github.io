@@ -52,6 +52,24 @@ function handleSuccess(response) {
  // center: {lat: 40.7127, lng: -74.0059},
 //  zoom: 12
 //})
+//}
+ var map = new google.maps.Map(document.querySelector('#map'), {
+//var map = new google.maps.Map(document.getElementById('map'), {
+    center: {
+    lat: latitude,
+    lng: longitude,
+    },
+    zoom: 12
+
+    });
+
+    var marker = new google.maps.Marker({
+      position: {
+        lat:latitude, 
+        lng: longitude,
+      },  
+      map: map,
+    });
 }
 
 
