@@ -82,7 +82,8 @@ var grungeAlbums = {
 // };
 
 
-// w3c  var myJSON = JSON.stringify(obj);
+// w3c says
+// var myJSON = JSON.stringify(obj);
 var grungeAlbumsJSON = JSON.stringify(grungeAlbums) {
 //  console.log(grungeAlbumsJSON)
 }
@@ -104,11 +105,12 @@ var grungeAlbumsJSON = JSON.stringify(grungeAlbums) {
 //  Units sold: 31234
 var grungeAlbumsParsed = JSON.parse(grungeAlbumsJSON);
  
-    for(var key in grungeAlbumParsed) {
-      console.log(this.name);
-      
-    }
-
+    grungeAlbumsParsed.albums.forEach(function(album){
+       console.log(album.name)
+       console.log(album.artist)
+       console.log(album.unitsSold)
+        
+    })
 
 
 
