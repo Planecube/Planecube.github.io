@@ -1,0 +1,25 @@
+
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#hey {
+  align-items: left;
+}
+
+.container {
+  background: rgba(222, 222, 222, 0.9);
+  border-radius: 3px;
+  padding: 20px;
+}
+
+body {
+  background: url(https://upload.wikimedia.org/wikipedia/commons/4/4e/Cumulonimbus_Clouds_seen_from_SCTEX.jpg);
+  background-size: cover;
+}
