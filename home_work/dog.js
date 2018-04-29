@@ -29,14 +29,21 @@ for retrieving properties (dot notation and brackets).
 }
 
 var schnitzy = new Dog('Schnitzy', 'Great Dane')
+
 schnitzy.eatSomething('kibble')
   
 schnitzy.introduce()  
 
+
 var brunhilde =new Dog('Brunhilde', 'Bichon Frise')
+
 brunhilde.eatSomething('truffle')
+
 brunhilde.introduce()
 
+
 var spots = new Dog('Spots', 'Terrier')
+
 spots.eatSomething('house shoes')
+
 spots.introduce()

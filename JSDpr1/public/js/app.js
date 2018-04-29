@@ -7,7 +7,7 @@ function photogrnd() {
 */
 
  $("#crout").click(function(){
-  $(".croutonre").slideToggle()
+ $(".croutonre").slideToggle()
  });
 
  $("#soup").click(function(){
@@ -34,6 +34,7 @@ function photogrnd() {
 //         return false;
 //       },
 //     },
+    
 //     signInOptions: [
 //       firebase.auth.EmailAuthProvider.PROVIDER_ID,
 //     ],
@@ -47,6 +48,8 @@ function photogrnd() {
 // const btnLogin = document.getElementBYId('btnLogin');
 // const btnSignup = document.getElementBYId('btnSignup');
 // const btnLogout = document.getElementBYId('btnLogout');
+
+//  trigger login screen with menu item
 
 // // Add Login Event
 //   btnLogin.addEventListener('click, e =>' {

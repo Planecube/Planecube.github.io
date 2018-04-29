@@ -6,81 +6,93 @@ function photogrnd() {
 }
 */
 
- $("#crout").click(function(){
-  $(".croutonre").slideToggle()
- });
+  // $("#crout").click(function(){
+  // $(".croutonre").slideToggle()
+  // });
 
- $("#soup").click(function(){
-  $(".soupre").slideToggle()
- });
+  // $("#soup").click(function(){
+  // $(".soupre").slideToggle()
+  // });
 
-  $("#salad").click(function(){
-  $(".saladre").slideToggle()
- });
-// Copy and past some login page css here...
+  // $("#salad").click(function(){
+  // $(".saladre").slideToggle()
+  // });
 
-// const auth = firebase.auth();
+ //  some code from Keanu
+ // Initialize the FirebaseUI Widget using Firebase.
+ //  var ui = new firebaseui.auth.AuthUI(firebase.auth())
 
-// auth.signInWithEmailAndPassword(email, pass);
+ //  var uiConfig = {
+ //    callbacks: {
+ //      signInSuccessWithAuthResult: function() {
+ //        return false;
+ //      },
+ //    },
+ //    signInOptions: [
+ //      firebase.auth.EmailAuthProvider.PROVIDER_ID,
+ //    ],
+ //  }
 
-// auth.createUserWithEmailAndPassword(email, pass);
+ //  ui.start('#firebaseui-auth-container', uiConfig)
+
+ 
+// (function(){
+//   // Initialize Firebase
+//   var config = {
+//     apiKey: "AIzaSyDEEYMwR3tNaTvDwKx-dYq1aMeq2z9Ijkk",
+//     authDomain: "gajsd-41c51.firebaseapp.com",
+//     databaseURL: "https://gajsd-41c51.firebaseio.com",
+//     projectId: "gajsd-41c51",
+//     storageBucket: "",
+//     messagingSenderId: "59709098463"
+//   };
+
+//   firebase.initializeApp(config);
+// }());
 
 
-//  // Initialize the FirebaseUI Widget using Firebase.
-//   var ui = new firebaseui.auth.AuthUI(firebase.auth())
+ /// Get elements into the DOM
+const txtEmail = document.getElementById('txtEmail');
+const txtPassword = document.getElementById('txtPassword');
+const btnLogin = document.getElementById('btnLogin');
+const btnSignUp = document.getElementById('btnSignUp');
+const btnLogOut = document.getElementById('btnLogOut');
 
-//   var uiConfig = {
-//     callbacks: {
-//       signInSuccessWithAuthResult: function() {
-//         return false;
-//       },
-//     },
-//     signInOptions: [
-//       firebase.auth.EmailAuthProvider.PROVIDER_ID,
-//     ],
-//   }
+// Add Login Event
+  btnLogin.addEventListener('click', e => {
 
-//   ui.start('#firebaseui-auth-container', uiConfig)
+  // Get email and password for login
 
-// // Get elements into the DOM
-// const txtEmail = document.getElementBYId('txtEmail');
-// const txtPassword = document.getElementBYId('txtPassword');
-// const btnLogin = document.getElementBYId('btnLogin');
-// const btnSignup = document.getElementBYId('btnSignup');
-// const btnLogout = document.getElementBYId('btnLogout');
-// // Add Login Event
-// btnLogin.addEventListener('click, e =>' {
-//   // Get email and password
-//   const email = txtEmail.value;
-//   const pass = txtPassword.value;
-//   const auth = firebase.auth();
-//   //Signin
-//   const promise = auth.signInWithEmailAndPassword(email, pass);
-//   promise.catch(e => console.log(e.message));
-// });
+  const email = txtEmail.value;
+  const pass = txtPassword.value;
+  const auth = firebase.auth();
 
-// // Add sign up event
-// btnSignup.addEventListener('click, e =>' {
-//   // Get email and password
-//   const email = txtEmail.value;
-//   const pass = txtPassword.value;
-//   const auth = firebase.auth();
-//   //Signup
-//   const promise = auth.createUserWithEmailAndPassword(email, pass);
-//   promise.catch(e => console.log(e.message));
-// });
-// //Add a signout button
-// btnLogout.addEventListener('click' => {
-//   firebase.auth().signOut();
-// });
+  //Signin
 
-// // Add a realtime listener
-// firebase.auth().onAuthStateChanged(firebaseUser =>{
-//   if (firebaseUser) {
-//     console.log(firebaseUser);
-//     btnLogout.classList.remove('hide');
-//   } else {
-//     console.log('not logged in');
-//     btnLogout.classList.add('hide');
-//   }
-// });
+  const promise = auth.signInWithEmailAndPassword(email, pass);
+  promise.catch(e => console.log(e.message));
+
+});
+
+
+//Add a signout button
+
+btnLogOut.addEventListener('click', e => {
+  firebase.auth().signOut();
+});
+
+// Add a realtime listener
+
+firebase.auth().onAuthStateChanged(firebaseUser => {
+  if (firebaseUser) {
+    console.log(firebaseUser);
+    btnLogOut.classList.remove('hide');
+  } else {
+    console.log('not logged in');
+    btnLogOut.classList.add('hide');
+  }
+});
+
+  
+  
+

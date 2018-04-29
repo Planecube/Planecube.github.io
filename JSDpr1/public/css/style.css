@@ -1,0 +1,147 @@
+html, body {
+    box-sizing:border-box;
+    font-family: Baskerville, Roboto, Helvetica, sans-serif;
+    color:#4A4A4A;
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+    margin: 0;
+    text-align: center;
+    text-decoration: none;
+    background-color: #FFFFFF
+}
+
+header nav {
+    background-color: #FFFFFF;
+    height: 50px;
+}
+
+header nav ul {
+    background-color:#FFFFFF;
+    height:150px;
+    font-family: Roboto;
+    font-size: 24px;
+    color: #4A4A4A;
+    letter-spacing: 1.4px;
+    padding: 8px 0px 10px 0px;
+    margin: 8px 0px 10px 0px;
+    overflow: hidden;
+}
+
+header nav ul li {
+    display:inline;
+    padding: 0;
+    list-style-type: none;
+    text-align: center
+  
+}#banner {
+    padding: 0px;
+    border: 1px solid #4A4A4A;
+    margin: 0 auto;
+    max-width: 70%;
+    font-family: Baskerville;
+    font-size: 24px;
+    color: #4A4A4A;
+    letter-spacing: 1.6px;
+    text-align: center;
+    line-height: 40px;
+}
+
+#recipetitle {
+    border: none;
+    max-width: auto;
+    padding: 0;
+    margin:-30px auto;
+    background-color: #FFFFFF;
+    font-family: Roboto-Thin;
+    font-size: 30px;
+    font-weight: lighter;
+    color: #4A4A4A;
+    letter-spacing: 2.6px;
+    text-align: center;
+    line-height: 76px;
+}
+
+#main {
+    display:flex;
+    justify-content: space-between;
+    padding: 30px;
+    /*background: url(https://i.imgur.com/gf4eCso.jpg);*/
+    background: url(../images/_H0A4189big.jpg);
+    min-height: 800px;
+    background-repeat: no-repeat;
+
+}
+
+#chooser {
+    padding-bottom: 30px;
+    left: 15px;
+    top: 40px;
+    text-decoration: none;
+    text-align:left;
+}
+
+#chooser a {
+    background-color: #ffffff;
+    display:block;
+    height:60px;
+    width: 244px;
+    padding: 5px 0 5px 15px;
+    margin:20px;
+    border: 2px solid #a4a4a4;
+    text-decoration: none;
+    font-size: 42px;
+}
+ a:link {
+    color: #a4a4a4; 
+    text-decoration: none;
+}
+
+a:visited {
+    color: pink;
+    text-decoration: none;
+}
+
+ a:hover {
+    color: #d87064;
+    text-decoration: none;
+}
+
+ a:active {
+    color: #f5a623;
+    text-decoration: none;
+}
+
+.croutonre {
+    display: none;
+    padding:30px;
+    margin: 0 auto;
+    width:600px;
+    background-color: #ffffff;
+    font-family: Baskerville;
+    font-size: 18px;
+    text-align: left;
+    border:none;
+}
+
+.soupre {
+    display: none;
+    padding:30px;
+    margin: 0 auto;
+    width:600px;
+    background-color: #ffffff;
+    font-family: Baskerville;
+    font-size: 18px;
+    text-align: left;
+    border:none;
+}
+
+.saladre {
+    display: none;
+    padding:30px;
+    margin: 0 auto;
+    width:600px;
+    background-color: #ffffff;
+    font-family: Baskerville;
+    font-size: 18px;
+    text
